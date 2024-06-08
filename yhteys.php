@@ -22,12 +22,12 @@
             <h2>Yhteystiedot</h2>
 
             <p> Kuntokeskus Kuntospurtti<br>
-                Osoite: Keksikatu 55, 56560 Kaupunki<br>
-                Puhelin: 04 567988<br>
-                Sähköposti: kuntokeskus@kuntospurtti.fi<br>
+                Herrankuru 7, 99990 Nuorgam<br>
+                04 567988<br>
+                kuntokeskus@kuntospurtti.fi<br>
             </p>
                             
-                <p><img src="https://via.placeholder.com/250x150" alt=""></p>					
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.9170644026651!2d27.86766441549097!3d70.08174651121647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45cb940aeef3e367%3A0x66e955beecacdb0d!2sHerrankuru%207%2C%2099990%20Utsjoki!5e0!3m2!1sfi!2sfi!4v1717869915133!5m2!1sfi!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>					
                             
                 <h2>Ota yhteyttä</h2>
 
@@ -68,4 +68,3 @@
         </body>
     
 </html>
-
