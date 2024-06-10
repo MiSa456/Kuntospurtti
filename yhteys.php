@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Yhteystiedot</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styless.css">
     </head>
     <body>
         <header>
@@ -19,16 +19,18 @@
             </nav>    
         </header>
         <main>
-            <h2>Yhteystiedot</h2>
-
-            <p> Kuntokeskus Kuntospurtti<br>
+            <div class="contact-laatikko">
+            <div class="map">                
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.9170644026651!2d27.86766441549097!3d70.08174651121647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45cb940aeef3e367%3A0x66e955beecacdb0d!2sHerrankuru%207%2C%2099990%20Utsjoki!5e0!3m2!1sfi!2sfi!4v1717869915133!5m2!1sfi!2sfi" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>					
+            </div>    
+            <div class="contact">
+                <p> Kuntokeskus Kuntospurtti<br>
                 Herrankuru 7, 99990 Nuorgam<br>
                 04 567988<br>
                 kuntokeskus@kuntospurtti.fi<br>
-            </p>
-                            
-                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.9170644026651!2d27.86766441549097!3d70.08174651121647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45cb940aeef3e367%3A0x66e955beecacdb0d!2sHerrankuru%207%2C%2099990%20Utsjoki!5e0!3m2!1sfi!2sfi!4v1717869915133!5m2!1sfi!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>					
-                            
+                </p>
+            </div>
+            </div>                
                 <h2>Ota yhteyttä</h2>
 
                 <p>Askarruttaako jokin? Jätä meille viesti.<br></p>
@@ -51,9 +53,9 @@
                 // Tarkistus että lomake on lähetetty ja että lomakekentät on täytetty sekä tulostaa käyttäjälle viestin
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {  
                     if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message'])) {
-                        echo "<p>Viesti lähetetty. Vastaamme 3 arkipäivän sisällä.</p>";
+                        echo "<div class='message-container success'><p>Viesti lähetetty. Vastaamme 3 arkipäivän sisällä.</p></div>";
                     } else {
-                        echo "<p>Täytä kaikki kentät.</p>";
+                        echo "<div class='message-container error'><p>Täytä kaikki kentät.</p></div>";
                     }
                 }
                 ?>
