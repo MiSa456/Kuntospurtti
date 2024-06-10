@@ -62,6 +62,9 @@
                 
                 </main>
                 <footer>
+                <p>
+                Herrankuru 7, 99990 Nuorgam, puh. 04 567988, sposti: kuntokeskus@kuntospurtti.fi<br>
+                </p>
                 &copy;Kurpitsa Solutions 2024
                 </footer>
                       
