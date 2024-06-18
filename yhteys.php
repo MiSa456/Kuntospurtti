@@ -48,12 +48,12 @@
                     <input type="submit" value="Lähetä">
 
                 </form>
-                
+                <br>
                 <?php
                 // Tarkistus että lomake on lähetetty ja että lomakekentät on täytetty sekä tulostaa käyttäjälle viestin
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {  
                     if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message'])) {
-                        echo "<div class='message-container success'><p>Viesti lähetetty. Vastaamme 3 arkipäivän sisällä.</p></div>";
+                        echo "<div class='message-container success'><p>Viesti lähetetty. Vastaamme kolmen arkipäivän sisällä.</p></div>";
                     } else {
                         echo "<div class='message-container error'><p>Täytä kaikki kentät.</p></div>";
                     }
@@ -63,9 +63,11 @@
                 </main>
                 <footer>
                 <p>
-                Herrankuru 7, 99990 Nuorgam, puh. 04 567988, sposti: kuntokeskus@kuntospurtti.fi<br>
+                Herrankuru 7, 99990 Nuorgam, puh. 04 567988, sposti: kuntokeskus@kuntospurtti.fi
                 </p>
+                <p>
                 &copy;Kurpitsa Solutions 2024
+                </p>
                 </footer>
                       
             

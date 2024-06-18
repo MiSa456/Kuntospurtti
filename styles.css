@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'archivo', helvetica bold;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Plus Jakarta Sans', helvetica bold;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Plus Jakarta Sans', montserrat, sans-serif;
+    font-weight: 400;
+}
+
+footer {
+    background-color: darkorchid;
+    color: lavender;
+    font-family: 'Plus Jakarta Sans', montserrat, sans-serif;
+    height: 3em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
