@@ -21,6 +21,13 @@ p {
     font-weight: 400;
 }
 
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
 footer {
     background-color: darkorchid;
     color: lavender;
