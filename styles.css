@@ -7,15 +7,28 @@
     padding: 0px;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: cadetblue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
+    flex: 1;
     margin: 0 4em 0 4em;
     padding: 7em 3em 3em 3em;
     background-color: bisque;
+}
 
+main ul {
+    list-style: circle inside none;
+    font-family: 'Plus Jakarta Sans', montserrat, sans-serif;
+    font-weight: 400;
 }
 
 h1 {

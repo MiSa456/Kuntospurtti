@@ -9,10 +9,10 @@
     <body>
         <header>
             <nav>
-                <h1><a href="index.html">Kuntospurtti</a><h1>
+                <h1><a href="index.html">Kuntospurtti</a></h1>
             <ul>
                 <li><a href="sali.html">Kuntosali</a></li>
-                <li><a href=treenit.html>Treenit</a></li>
+                <li><a href="treenit.html">Treenit</a></li>
                 <li><a href="pt.html">Personal training</a></li>
                 <li><a href="yhteys.php">Yhteys</a></li>
             </ul>
