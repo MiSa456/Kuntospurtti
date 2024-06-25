@@ -9,7 +9,7 @@
     <body>
         <header>
             <nav>
-                <h1><a href="index.html">Kuntospurtti</a></h1>
+                <a href="index.html"><span>Kuntospurtti</span></a>
             <ul>
                 <li><a href="sali.html">Kuntosali</a></li>
                 <li><a href="treenit.html">Treenit</a></li>
@@ -31,20 +31,22 @@
                 kuntokeskus@kuntospurtti.fi<br>
                 </p>
             </div>
-            </div>                
+            </div>
+            <br><br>                
                 <h2>Ota yhteyttä</h2>
-
-                <p>Askarruttaako jokin? Jätä meille viesti.<br></p>
-
+                <br>
+                <p>Askarruttaako jokin? Jätä meille viesti.</p>
+                <br>
+                
                 <form action="" method="post">
                     <label for="name">Nimi:</label><br>
-                    <input type="text" id="name" name="name" required><br><br>
+                    <input type="text" id="name" name="name" required><br>
 
                     <label for="email">Sähköposti:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
+                    <input type="email" id="email" name="email" required><br>
         
                     <label for="message">Viesti:</label><br>
-                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
         
                     <input type="submit" value="Lähetä">
 

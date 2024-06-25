@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+/* Main ja body */
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -20,7 +21,7 @@ body {
 
 main {
     flex: 1;
-    margin: 0 4em 0 4em;
+    margin: 0 5em 0 5em;
     padding: 7em 3em 3em 3em;
     background-color: bisque;
 }
@@ -31,15 +32,25 @@ main ul {
     font-weight: 400;
 }
 
+
+/* Tekstimuotoilut */
 h1 {
     font-family: 'archivo', helvetica bold;
     font-weight: 600;
     text-transform: uppercase;
+    padding: 1em 0em 1em 0em;
+}
+
+h2 {
+    font-family: 'Plus Jakarta Sans', helvetica bold;
+    font-weight: 600;
+    padding: 0.5em 0 0.5em 0;
 }
 
 h3 {
     font-family: 'Plus Jakarta Sans', helvetica bold;
     font-weight: 500;
+    padding: 0.5em 0 0.5em 0;
 }
 
 p {
@@ -47,6 +58,8 @@ p {
     font-weight: 400;
 }
 
+
+/* Header ja navigointi */
 header {
     background-color: blueviolet;
     position: fixed;
@@ -70,6 +83,10 @@ nav {
     align-items: center;
 }
 
+nav span {
+    text-transform: uppercase;
+}
+
 nav ul {
     display: flex;
     align-items: center;    
@@ -79,6 +96,41 @@ nav a:hover {
     text-decoration: overline underline;
 }
 
+
+/* Sisältö */
+.pt-laatikko {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2em 1em 2em 1em;
+}
+
+.pt-laatikko img {
+    padding-right: 2em;
+}
+
+.contact-laatikko {
+    display: flex;
+    padding: 1.5em 1em 2em 1em;
+}
+
+.contact-laatikko iframe {
+    padding-right: 2em;
+} 
+
+form {
+    font-family: 'Plus Jakarta Sans', montserrat, sans-serif;
+    font-weight: 400;
+    padding: 0;
+}
+
+form input, textarea {
+    margin: 0 0 1em 0;
+    border: solid;
+    border-radius: 10%;
+}
+
+/* Footer */
 footer {
     background-color: darkorchid;
     color: lavender;
