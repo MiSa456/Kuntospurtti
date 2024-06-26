@@ -9,7 +9,7 @@
     <body>
         <header>
             <nav>
-                <a href="index.html"><span>Kuntospurtti</span></a>
+                <a href="index.html"><img src="kuntospurtti_logo.jpg" alt="logo"></a>
             <ul>
                 <li><a href="sali.html">Kuntosali</a></li>
                 <li><a href="treenit.html">Ohjatut tunnit</a></li>
@@ -19,6 +19,7 @@
             </nav>    
         </header>
         <main>
+        <div id="yhteys">
         <h1>Yhteystiedot</h1>
             <div class="contact-laatikko">
             <div class="map">                
@@ -62,7 +63,7 @@
                     }
                 }
                 ?>
-                
+                </div>
                 </main>
                 <footer>
                 <p>

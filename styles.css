@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
@@ -13,7 +15,7 @@ html, body {
 }
 
 body {
-    background-color: cadetblue;
+    background-color: gray;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,19 +25,20 @@ main {
     flex: 1;
     margin: 0 5em 0 5em;
     padding: 7em 3em 3em 3em;
-    background-color: bisque;
+    background: linear-gradient(to left, #dede50, #689f38);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 main ul {
     list-style: circle inside none;
-    font-family: 'Plus Jakarta Sans', montserrat, sans-serif;
+    font-family: 'Anek Bangla', montserrat, sans-serif;
     font-weight: 400;
 }
 
 
 /* Tekstimuotoilut */
 h1 {
-    font-family: 'archivo', helvetica bold;
+    font-family: 'Anek Bangla', helvetica bold;
     font-weight: 600;
     text-transform: uppercase;
     padding: 1em 0em 1em 0em;
@@ -61,20 +64,27 @@ p {
 
 /* Header ja navigointi */
 header {
-    background-color: blueviolet;
+    background-color: #000000;
     position: fixed;
     width: 100%;
-    height: 5em;
+    height: 6em;
     padding: 1em 2em 1em 2em;
 }
 
 header li, a {
-    color: lavender;
-    font-family: 'archivo', helvetica bold;
-    font-size: large;
+    color: #dede50;
+    font-family: 'Anek Bangla', helvetica bold;
+    font-size: 20px;
     text-decoration: none;
     list-style: none;
-    padding: 0.5em;
+
+}
+
+nav img {
+    max-width: 100%;
+    height: auto;
+    max-height: 55px;
+    align-items: center;
 }
 
 nav {
@@ -83,13 +93,10 @@ nav {
     align-items: center;
 }
 
-nav span {
-    text-transform: uppercase;
-}
-
 nav ul {
     display: flex;
     align-items: center;    
+    gap: 20px;
 }
 
 nav a:hover {
@@ -97,12 +104,34 @@ nav a:hover {
 }
 
 
-/* Sisältö */
+/* SISÄLTÖ */
 
+/* Etusivu */
+#index h1 {
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    height: 150px;  
+    margin: 10px 0;  
+}
+
+#index h1 img {
+    max-width: 120%;  
+    max-height: 120%;  
+    height: auto;
+    width: auto;
+}
+
+
+/* Kuntosali */
+
+
+/* Ohjatut tunnit */
 sup {
 font-size: xx-small;
 }
 
+/* Personal training */
 .pt-laatikko {
     display: flex;
     justify-content: space-between;
@@ -114,6 +143,7 @@ font-size: xx-small;
     padding-right: 2em;
 }
 
+/* Yhteystiedot */
 .contact-laatikko {
     display: flex;
     padding: 1.5em 1em 2em 1em;
@@ -137,8 +167,8 @@ form input, textarea {
 
 /* Footer */
 footer {
-    background-color: darkorchid;
-    color: lavender;
+    background-color: #424242;
+    color: #dede50;
     font-family: 'Plus Jakarta Sans', montserrat, sans-serif;
     height: 3em;
     padding: 0.5em 1.5em 0.5em 1.5em;
@@ -150,4 +180,5 @@ footer {
 footer p:nth-child(2) {
     font-size: small;
     font-style: italic;
+    color: #689f38;
 }
