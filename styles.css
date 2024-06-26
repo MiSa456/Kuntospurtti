@@ -98,6 +98,11 @@ nav a:hover {
 
 
 /* Sisältö */
+
+sup {
+font-size: xx-small;
+}
+
 .pt-laatikko {
     display: flex;
     justify-content: space-between;
@@ -126,8 +131,8 @@ form {
 
 form input, textarea {
     margin: 0 0 1em 0;
-    border: solid;
-    border-radius: 10%;
+    border: 0.5px solid;
+    padding: 0.5em;
 }
 
 /* Footer */

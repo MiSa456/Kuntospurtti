@@ -12,7 +12,7 @@
                 <a href="index.html"><span>Kuntospurtti</span></a>
             <ul>
                 <li><a href="sali.html">Kuntosali</a></li>
-                <li><a href="treenit.html">Treenit</a></li>
+                <li><a href="treenit.html">Ohjatut tunnit</a></li>
                 <li><a href="pt.html">Personal training</a></li>
                 <li><a href="yhteys.php">Yhteys</a></li>
             </ul>
