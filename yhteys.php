@@ -23,9 +23,9 @@
         <div id="yhteys">
         <h1>Yhteystiedot</h1>
             <div class="contact-laatikko">
-            <div class="map">                
-                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.9170644026651!2d27.86766441549097!3d70.08174651121647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45cb940aeef3e367%3A0x66e955beecacdb0d!2sHerrankuru%207%2C%2099990%20Utsjoki!5e0!3m2!1sfi!2sfi!4v1717869915133!5m2!1sfi!2sfi" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>					
-            </div>    
+                <div class="map">                
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.9170644026651!2d27.86766441549097!3d70.08174651121647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45cb940aeef3e367%3A0x66e955beecacdb0d!2sHerrankuru%207%2C%2099990%20Utsjoki!5e0!3m2!1sfi!2sfi!4v1717869915133!5m2!1sfi!2sfi" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="map"></iframe></p>					
+                </div>    
             <div class="contact">
                 <p> Kuntokeskus Kuntospurtti<br>
                 Herrankuru 7, 99990 Nuorgam<br>
@@ -41,14 +41,14 @@
                 <br>
                 
                 <form action="" method="post">
-                    <label for="name">Nimi:</label><br>
+                    <label for="name">Nimi</label><br>
                     <input type="text" id="name" name="name" required><br>
 
-                    <label for="email">Sähköposti:</label><br>
+                    <label for="email">Sähköposti</label><br>
                     <input type="email" id="email" name="email" required><br>
         
-                    <label for="message">Viesti:</label><br>
-                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                    <label for="message">Viesti</label><br>
+                    <textarea id="message" name="message" rows="5" cols="50" required></textarea><br>
         
                     <input type="submit" value="Lähetä">
 
