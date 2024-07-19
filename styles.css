@@ -28,7 +28,6 @@ p {
     font-size: 17px;
 }
 
-
 /* Main ja body */
 * {
     box-sizing: border-box;
@@ -52,8 +51,9 @@ body {
 main {
     flex: 1;
     margin: 0 auto;
-    width: 70%;
-    min-width: 450px;
+    width: 90%;
+    min-width: 400px;
+    max-width: 100%;
     padding: 7em 3em 3em 3em;
     background: linear-gradient(to right, #dede50, #689f38);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
@@ -64,7 +64,6 @@ main ul {
     font-family: 'Anek Bangla', montserrat, sans-serif;
     font-weight: 400;
 }
-
 
 /* Header ja navigointi */
 header {
@@ -108,6 +107,24 @@ nav a:hover {
     text-decoration: overline underline;
 }
 
+/* Navigointi mobiililaitteella */
+@media (max-width: 768px) {
+    header {
+        padding: 1em 1em 1em 1em; /* Pienennetään headerin sisäistä marginaalia */
+    }
+
+    nav ul {
+        gap: 10px; /* Pienennetään välimatkaa linkkien välillä */
+    }
+
+    header li, a {
+        font-size: 14px; /* Pienennetään fonttikokoa */
+    }
+
+    nav img {
+        max-height: 45px; /* Pienennetään logoa */
+    }
+}
 
 /* SISÄLTÖ */
 
@@ -167,7 +184,7 @@ nav a:hover {
 }
 
 sup {
-font-size: xx-small;
+    font-size: xx-small;
 }
 
 /* Personal training */
@@ -177,35 +194,47 @@ font-size: xx-small;
 
 .pt-laatikko {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row; /* Oletuksena vaakasuunnassa */
     align-items: flex-start;
-    padding: 1em 1em 1m 1em;
+    padding: 1em 1em 1em 1em;
     min-width: fit-content;
     max-width: 100%;
 }
 
 .pt-laatikko img {
-    max-width: 40%;
+    width: 40%;
     margin-right: 2em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query pienille näytöille */
+@media (max-width: 767px) {
+    .pt-laatikko {
+        flex-direction: column; /* Muutetaan pystysuuntaiseksi pienemmillä näytöillä */
+        align-items: center;
+        width: 100%;
+    }
+    .pt-laatikko img {
+        width: 100%; /* Kuvan leveys 100% laatikon leveydestä */
+        margin-right: 0; /* Poistetaan oikea marginaali */
+        margin-bottom: 1em; /* Lisätään marginaali kuvan ja tekstin väliin */
+    }
 }
 
 /* Yhteystiedot */
 .contact-laatikko {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     gap: 30px;
-    padding: 1em 1em 1m 1em;
-    margin: 0 20px 0 20px;
-}
-
-.map {
-    flex: 1.5;
+    padding: 1em 1em 1em 1em;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 .map iframe {
     width: 100%;
-    min-width: 200px;
+    max-width: 500px;
     height: 300px;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
@@ -213,16 +242,17 @@ font-size: xx-small;
 
 .contact {
     display: flex;
-    flex: 1;
+    flex: 1 1 100%;
 }
 
 form {
     font-family: 'Plus Jakarta Sans', montserrat, sans-serif;
     font-weight: 400;
-    min-width: 350px;
-    border: 1px solid darkgreen; 
+    border: 1px solid darkgreen;
     padding: 20px;
-    margin: 0 40px 0 40px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
 }
 
 form input {
@@ -256,8 +286,17 @@ input[type='submit'] {
 input[type='submit']:active {
     font-weight: bold;
     border: 1.5px solid;
+}
+
+/* Lomakkeen leveyden säätö suurilla näytöillä */
+@media (min-width: 1024px) {
+    form {
+        max-width: 800px;
+        margin-left: 0;
+        float: left;
     }
-    
+}
+
 
 /* Footer */
 footer {
